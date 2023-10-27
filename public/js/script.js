@@ -1,6 +1,4 @@
 $(document).ready(function() {
-    $('#customerIdSearchBar').select2({
-        theme: "classic"
-    });
+    $('#customerIdSearchBar').select2();
 
 });
