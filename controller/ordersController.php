@@ -5,9 +5,8 @@ $routeur->map('GET|POST','/orders',function () use ($conn){
     $allCustomers = selectAllCustomers($conn);
     if(!empty($_POST['customerIdSearchBar'])){
         $idCustomer = htmlspecialchars($_POST['customerIdSearchBar']);
-        $customer = selectOneCustomer($conn,$idCustomer);
-        $orderByIdCustomer = selectOrderByIdCustomer($conn,$idCustomer);
-        var_dump($orderByIdCustomer);
+        $customerSearchBar = selectOneCustomer($conn,$idCustomer);
+        $ordersByIdCustomer = selectOrdersByIdCustomer($conn,$idCustomer);
     }
     require 'templates/orders/ordersTemplate.php';
 

@@ -1,12 +1,13 @@
 <?php
 
-function selectOrderByIdCustomer($conn,$idCustomer){
+function selectOrdersByIdCustomer($conn,$idCustomer){
     try {
-        $selectOrder = $conn->prepare('SELECT * FROM order WHERE customer_id_id = :idCustomer');
-        $selectOrder->execute(array(
+        $selectOrders = $conn->prepare("SELECT * FROM orders WHERE customerId =:idCustomer");
+        $selectOrders->execute([
             'idCustomer' => $idCustomer
-        ));
-        $orderByIdCustomer = $selectOrder->fetchAll();
+        ]);
+        $ordersByIdCustomer = $selectOrders->fetchAll();
+        return $ordersByIdCustomer;
     }catch(PDOException $e){
         echo 'ERROR: '.$e->getMessage();
     }

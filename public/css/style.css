@@ -93,11 +93,21 @@
 }
 
 .container-right{
-    background-color: rebeccapurple;
-    width: 50%;
+    width: 55%;
+    background-color: #F0F0F0;
+    /*border-left:1px black solid ;*/
     height: 100vh;
 }
 
 .container-left{
-    width: 50%;
+    width: 45%;
+}
+
+
+#tableOrders{
+
+}
+
+#formOrder{
+    visibility: hidden;
 }
