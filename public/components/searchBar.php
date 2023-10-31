@@ -6,9 +6,7 @@
             <?php foreach ($allCustomers as $customer): ?>
                 <option value="<?=$customer['id']?>"><?=$customer['name']?> <?=$customer['first_name']?></option>
             <?php endforeach; ?>
-            <option value="d">dodo</option>
-            <option value="d">dmao</option>
         </select>
-        <button class="btn btn-outline-success btn-sm" type="submit">Rechercher</button>
+        <input class="btn btn-outline-success btn-sm"  type="submit" value="Rechercher"/>
     </form>
 </div>

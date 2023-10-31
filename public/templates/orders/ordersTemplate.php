@@ -8,8 +8,7 @@
                         <h5 class="card-title"><?=$customerSearchBar['name']?></h5>
                         <h5 class="card-subtitle mb-2"><?=$customerSearchBar['first_name']?></h5>
                         <p class="card-text"><?=$customerSearchBar['phone_number']?></p>
-                        <a href="#" class="card-link btn btn-outline-info btn-sm btn-card" id="lienConsulter">Consulter</a>
-                        <a href="#" class="card-link btn btn-outline-success btn-sm btn-card" id="linkAddOrders">Ajouter</a>
+                        <a href="/orders/add/<?=$customerSearchBar['id']?>" class="card-link btn btn-outline-success btn-sm btn-card" id="linkAddOrders">Ajouter</a>
                     </div>
                 </div>
             <?php endif;  ?>
@@ -17,10 +16,7 @@
     </div>
 
     <div class="container-right" id="container-right">
-        <?php if(!empty($_POST['customerIdSearchBar'])): ?>
-            <?php require '../public/components/tableOrders.php'; ?>
-            <?php require '../public/forms/formOrder.php'; ?>
-        <?php endif; ?>
+            <?php require 'components/tableOrders.php'?>
     </div>
 </div>
 

@@ -12,6 +12,10 @@ $routeur->map('GET|POST','/orders',function () use ($conn){
 
 },'orders');
 
+$routeur->map('GET','/orders/add/[i:idCustomer]',function ($idCustomer) use ($conn){
+    require 'templates/orders/ordersAddTemplate.php';
+},'addOrders');
+
 $match = $routeur->match();
 
 if(is_array($match)){

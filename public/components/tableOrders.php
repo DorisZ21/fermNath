@@ -10,16 +10,17 @@
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($ordersByIdCustomer as $order): ?>
-        <tr>
-            <th scope="row"><?=$order['id']?></th>
-            <td><?=$order['poulet_scie']?></td>
-            <td><?=$order['poulet_decoupe']?></td>
-            <td><?=$order['poulet_filet']?></td>
-            <td><?=$order['deliveryId']?></td>
-            <td><a href="" class="btn btn-primary btn-sm">Modifier</a> <a href="" class="btn btn-danger btn-sm">Suprimer</a></td>
-        </tr>
-    <?php endforeach; ?>
+    <?php if(!empty($ordersByIdCustomer)): ?>
+        <?php foreach ($ordersByIdCustomer as $order): ?>
+            <tr>
+                <th scope="row"><?=$order['id']?></th>
+                <td><?=$order['poulet_scie']?></td>
+                <td><?=$order['poulet_decoupe']?></td>
+                <td><?=$order['poulet_filet']?></td>
+                <td><?=$order['deliveryId']?></td>
+                <td><a href="" class="btn btn-primary btn-sm">Modifier</a> <a href="" class="btn btn-danger btn-sm">Suprimer</a></td>
+            </tr>
+        <?php endforeach; ?>
+    <?php endif; ?>
     </tbody>
-    <?= var_dump($ordersByIdCustomer) ?>
 </table>
