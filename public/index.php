@@ -2,9 +2,10 @@
 session_start();
 require  '../config/connect.php';
 require '../vendor/autoload.php';
-require_once '../model/adminModel.php';
-require_once '../model/deliveryModel.php';
-require_once '../model/ordersModel.php';
+require '../model/adminModel.php';
+require '../model/deliveryModel.php';
+require '../model/ordersModel.php';
+require '../model/customersModel.php';
 require 'components/header.php';
 
 ?>

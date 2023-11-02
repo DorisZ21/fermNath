@@ -1,5 +1,5 @@
 <?php
-require '../model/customersModel.php';
+
 // Routeur page commandes
 $routeur->map('GET|POST','/orders',function () use ($conn){
     $allCustomers = selectAllCustomers($conn);
@@ -13,6 +13,9 @@ $routeur->map('GET|POST','/orders',function () use ($conn){
 },'orders');
 
 $routeur->map('GET','/orders/add/[i:idCustomer]',function ($idCustomer) use ($conn){
+    $idCustomer = $idCustomer['idCustomer'];
+    $deliveries = selectAllDelivery($conn);
+    $customer = selectOneCustomer($conn,$idCustomer);
     require 'templates/orders/ordersAddTemplate.php';
 },'addOrders');
 
