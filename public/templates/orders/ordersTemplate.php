@@ -1,5 +1,8 @@
 <div class="container-main">
     <div class="container-left">
+        <?php if(!empty($_SESSION['flashMessage'])): ?>
+            <?php require 'components/alertFlashMessage.php'?>
+        <?php endif; ?>
         <?php require 'components/searchBar.php'?>
         <div class="container containerCard">
             <?php if(!empty($customerSearchBar)): ?>

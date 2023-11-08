@@ -1,0 +1,11 @@
+BUG :
+-------------------------------------------
+Faire la redirection vers la page des commandes et afficher le message flash (Controller orders et dans la partie orders/add/i)
+
+
+A terminer :
+-------------------------------------------
+- Faire la page pour modifier une commande
+- Faire la page des utilisateurs
+- Faire le design et le responsive des pages
+- Faire tout les tests et vérifier qu'il n'y a pas de failles de sécurité

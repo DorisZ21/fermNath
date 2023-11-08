@@ -31,5 +31,5 @@
         </select>
     </div>
 
-    <button type="submit" class="btn btn-success">Valider</button>
+    <button type="submit" class="btn btn-success" name="btnFormOrder">Valider</button>
 </form>
