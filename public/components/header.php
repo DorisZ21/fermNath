@@ -10,13 +10,13 @@
                     <a class="nav-link active link-light" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-light" href="/orders">Commandes</a>
+                    <a class="nav-link link-light" href="/orders/show">Commandes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-light" href="/delivery/show">Livraison</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-light" href="">Utilisateur</a>
+                    <a class="nav-link link-light" href="">Client</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-light" href="/login">Connexion</a>
