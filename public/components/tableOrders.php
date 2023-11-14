@@ -10,8 +10,8 @@
     </tr>
     </thead>
     <tbody>
-    <?php if(!empty($ordersByIdCustomer)): ?>
-        <?php foreach ($ordersByIdCustomer as $order): ?>
+    <?php if(!empty($orders)): ?>
+        <?php foreach ($orders as $order): ?>
             <tr>
                 <th scope="row"><?=$order['id']?></th>
                 <td><?=$order['poulet_scie']?></td>

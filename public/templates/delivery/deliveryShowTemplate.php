@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?=$delivery['name']?></h5>
                     <p class="card-text"><?=$delivery['date']?></p>
-                    <a href="" class="btn btn-secondary">Consulter</a>
+                    <a href="/delivery/consult/<?=$delivery['id']?>" class="btn btn-secondary">Consulter</a>
                     <a href="/delivery/update/<?=$delivery['id']?>" class="btn btn-primary">Modifier</a>
                     <a href="/delivery/delete/<?=$delivery['id']?>" class="btn btn-danger">Supprimer</a>
                 </div>

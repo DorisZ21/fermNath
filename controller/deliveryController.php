@@ -59,6 +59,11 @@ $routeur->map('GET','/delivery/delete/[i:idDelivery]',function ($idDelivery) use
         header('Location:/delivery/show');
     }
 });
+
+$routeur->map("GET",'/delivery/consult/[i:idDelivery]', function ($idDelivery) use ($conn){
+    $orders = selectOrderByIdDelivery(htmlspecialchars($idDelivery['idDelivery']),$conn);
+    require_once 'templates/delivery/deliveryConsultTemplate.php';
+},'deliveryConsult');
 // match() permet de vérifier si l'url correspond à une route
 $match = $routeur->match();
 if(is_array($match)){

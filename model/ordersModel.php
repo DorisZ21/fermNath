@@ -26,6 +26,19 @@ function selectOrdersByIdCustomer($conn,$idCustomer){
 
 }
 
+function selectOrderByIdDelivery(int $idDelivery,$conn){
+    try {
+        $queryOrderByIdDelivery = $conn->prepare("SELECT * FROM orders WHERE deliveryId = :idDelivery ");
+        $queryOrderByIdDelivery->execute([
+            'idDelivery' => $idDelivery
+        ]);
+        $resultOrders = $queryOrderByIdDelivery->fetchAll();
+        return $resultOrders;
+    }catch (PDOException $e){
+        echo "ERROR : ".$e->getMessage();
+    }
+}
+
 function addOrder($conn,$pouletsFilet,$pouletsScie,$pouletsDecoupe,$customerId,$deliveryId) : bool{
     try{
         $queryAddOrder = $conn->prepare("INSERT INTO orders (deliveryId,customerId,poulet_scie,poulet_filet,poulet_decoupe) VALUES (:deliveryId,:customerId,:poulet_scie,:poulet_filet,:poulet_decoupe)");
