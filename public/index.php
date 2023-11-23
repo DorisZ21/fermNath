@@ -25,6 +25,7 @@ require 'components/header.php';
     <?php
         require '../controller/homeController.php';
         require '../controller/ordersController.php';
+        require '../controller/customerController.php';
         require '../controller/deliveryController.php';
         require '../controller/error404Controller.php';
     ?>

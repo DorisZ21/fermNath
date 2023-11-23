@@ -16,7 +16,7 @@
                     <a class="nav-link link-light" href="/delivery/show">Livraison</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-light" href="">Client</a>
+                    <a class="nav-link link-light" href="/customer/show">Client</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-light" href="/login">Connexion</a>

@@ -103,4 +103,11 @@
     width: 45%;
 }
 
+/* Page customer */
 
+.containerCardCustomer{
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+
+}

@@ -23,3 +23,16 @@ function selectAllCustomers($conn){
         echo $e->getMessage();
     }
 }
+
+function addCustomer($conn,$name,$firstName,$phoneNumber){
+    try {
+        $queryAddCustomer = $conn->prepare("INSERT INTO customer VALUES(:name,:firstName,:phoneNumber)");
+        $queryAddCustomer->execute([
+            'name' => $name,
+            'firstName' => $firstName,
+            'phoneNumber' => $phoneNumber
+        ]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+}

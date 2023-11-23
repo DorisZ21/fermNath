@@ -14,7 +14,7 @@
                         <a href="/orders/add/<?=$customerSearchBar['id']?>" class="card-link btn btn-outline-success btn-sm btn-card" id="linkAddOrders">Ajouter</a>
                     </div>
                 </div>
-            <?php endif;  ?>
+            <?php endif;?>
         </div>
     </div>
 
