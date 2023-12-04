@@ -1,5 +1,5 @@
+<?php require 'components/alertFlashMessage.php'?>
 <?php require 'components/searchBar.php'?>
-
 <div class="container-fluid containerCardCustomer">
     <?php if(!empty($customerSearchBar)): ?>
         <div class="card" style="width: 18rem;">

@@ -5,7 +5,7 @@
     </div>
     <div class="mb-3">
         <label for="firstNameCustomer">Prenom</label>
-        <input class="form-control" type="text" name="FirstNameCustomer" value="<?= (!empty($infoCustomerUpdate) ? $infoCustomerUpdate['first_name'] : "") ?>">
+        <input class="form-control" type="text" name="firstNameCustomer" value="<?= (!empty($infoCustomerUpdate) ? $infoCustomerUpdate['first_name'] : "") ?>">
     </div>
     <div class="mb-3">
         <label for="phoneNumberCustomer">Numéro de téléphone</label>
