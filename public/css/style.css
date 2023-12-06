@@ -5,6 +5,11 @@
     padding: 0px;
 }
 
+.title-margin{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 /* Page login CSS */
 .containerLoginForm{
     margin:  50px auto;
@@ -51,8 +56,29 @@
     font-size: 100px;
     color: black;
 }
+/* page delivery */
 
+.title-delivery{
+    margin-left: 18px;
+    margin-top: 1em;
+}
+.container-card-delivery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+    .card{
+       margin-left: 0;
+   }
+}
 /* Page orders */
+
 .formSearchBar{
     width: 50%;
     display: flex;
@@ -101,6 +127,29 @@
 
 .container-left{
     width: 45%;
+}
+
+@media only screen and (max-width: 900px) {
+    .container-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-left{
+        width: 100%;
+    }
+    .container-right{
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .formSearchBar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .searchBarOrders{
+        width: 50%;
+    }
 }
 
 /* Page customer */

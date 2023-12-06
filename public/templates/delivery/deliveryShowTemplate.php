@@ -1,10 +1,9 @@
-<h1>Livraisons</h1>
 <?php require 'components/alertFlashMessage.php'?>
 <a href="/delivery/add">Ajouter une livraison</a>
 <div class="container">
-    <h1 class="mb-4 mt-4">Livraisons</h1>
-    <div class="row">
-        <div class="col-sm-6">
+    <h1 class="title-delivery">Livraisons</h1>
+    <div class="row container-principal-card-delivery">
+        <div class="container-card-delivery">
             <?php foreach ($deliveries as $delivery): ?>
             <div class="card">
                 <div class="card-body">

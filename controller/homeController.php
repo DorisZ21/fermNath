@@ -15,7 +15,7 @@ $routeur->map('GET|POST','/login',function () use ($conn){
                         $passwordLogin = htmlspecialchars($_POST['password']);
                         $_SESSION['isConnected'] = connectAdmin($emailLogin,$passwordLogin,$conn);
                         if($_SESSION['isConnected']){
-                            header('location:/');
+                            header('location:/orders/show');
                         }
                     }else{
                         $_SESSION['flashMessage'] = "Mot de passe manquant !";

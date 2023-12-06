@@ -4,8 +4,13 @@ $routeur->map('GET|POST', '/customer/show', function() use ($conn){
     $allCustomers = selectAllCustomers($conn);
     if(!empty($_POST['customerIdSearchBar'])){
         $idCusotmer = htmlspecialchars($_POST['customerIdSearchBar']);
+        setcookie('customerSearch', $idCusotmer, time() + 60, '/customer/show');
         $customerSearchBar = selectOneCustomer($conn,$idCusotmer);
+    }else if(!empty($_COOKIE['customerSearch'])){
+        $customerSearchBar = selectOneCustomer($conn,$_COOKIE['customerSearch']);
     }
+
+
     require 'templates/customer/customerShowTemplate.php';
 });
 
