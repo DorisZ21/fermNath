@@ -62,6 +62,7 @@ $routeur->map('GET','/delivery/delete/[i:idDelivery]',function ($idDelivery) use
 
 $routeur->map("GET",'/delivery/consult/[i:idDelivery]', function ($idDelivery) use ($conn){
     $orders = selectOrderByIdDelivery(htmlspecialchars($idDelivery['idDelivery']),$conn);
+    $delivery = selectOneDelivery($conn,$idDelivery['idDelivery']);
     require_once 'templates/delivery/deliveryConsultTemplate.php';
 },'deliveryConsult');
 // match() permet de vérifier si l'url correspond à une route

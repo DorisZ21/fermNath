@@ -129,6 +129,8 @@
     width: 45%;
 }
 
+
+
 @media only screen and (max-width: 900px) {
     .container-main{
         display: flex;
@@ -159,4 +161,19 @@
     margin-top: 2em;
     justify-content: center;
 
+}
+
+@media print {
+    #btnDeleteTableOrders{
+        display: none;
+    }
+    #btnUpdateTableOrders{
+        display: none;
+    }
+    #impression{
+        display: none;
+    }
+   /* .tdOrder{
+        text-align: center;
+    }*/
 }
