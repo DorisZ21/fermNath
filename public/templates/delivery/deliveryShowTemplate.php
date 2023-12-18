@@ -1,5 +1,5 @@
 <?php require 'components/alertFlashMessage.php'?>
-<a href="/delivery/add">Ajouter une livraison</a>
+<a href="/delivery/add" class="btn btn-primary btn-add-delivery">Ajouter une livraison</a>
 <div class="container">
     <h1 class="title-delivery">Livraisons</h1>
     <div class="row container-principal-card-delivery">
