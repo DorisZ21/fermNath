@@ -2,7 +2,7 @@
 $routeur = new AltoRouter();
 // Routeur pour la home page
 $routeur->map('GET','/',function (){
-    require 'templates/home.php';
+    require 'templates/orders/ordersTemplate.php';
 },'home');
 // Routeur page login
 $routeur->map('GET|POST','/login',function () use ($conn){

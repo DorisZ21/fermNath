@@ -1,5 +1,5 @@
 <div class="container container-searchBar">
-    <h3 class="titleSearchBar">Rechercher un client </h3>
+    <h3 class="titre-bar-recherche title-border">Rechercher un client </h3>
     <form action="" method="post" class="formSearchBar">
         <select class="searchBarOrders form-control" id="customerIdSearchBar" name="customerIdSearchBar">
             <option value="none">Rechercher un client</option>
